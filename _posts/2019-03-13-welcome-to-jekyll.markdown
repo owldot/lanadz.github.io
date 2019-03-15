@@ -2,24 +2,28 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2019-03-13 17:32:32 +0800
-categories: jekyll update
+categories: jekyll blog
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Hi,
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+I was super excited to learn about Jekyll and it's combo with GitHub Pages. Before, I used Blogger from Google. Honestly, I didn't like Blogger at all. It has ugly editor, html generated for post is brutal to edit.
+The nice things about Blogger - it is available right away for every user who has account in google, it has comments, it has share buttons, etc.
 
-Jekyll also offers powerful support for code snippets:
+My main idea is not to write long posts or to write very often, no I am not a blogger 😅
+But I want to be able to share or make note really quickly. I like efficient tools. Who doesn't, right?
+And Jekyll + GitHub Pages looks like it gives you this opportunity. 
+- It uses markdown as a template language
+- You keep it on github. You just need to commit and push a new post
+- It offers powerful support for code snippets
+- It is written in Ruby ♥️
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+Now instead of keeping things in gists, notes, codepen I'll be able to keep it here. I love this idea
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Documentation to 
+- [Jekyll github](https://github.com/jekyll/jekyll)
+- [Jekyll home](https://jekyllrb.com)
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+If you would like to setup Jekyll for yourself I would recommend to look through this video course:
+[Jekyll Giraffe Academy](https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB), especially last [episode](https://www.youtube.com/watch?v=fqFjuX4VZmU&list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&index=20&t=0s) about deploying to GitHub pages
+
+Happy blogging
