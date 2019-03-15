@@ -13,11 +13,11 @@ My main idea is not to write long posts or to write very often, no I am not a bl
 But I want to be able to share or make note really quickly. I like efficient tools. Who doesn't, right?
 And Jekyll + GitHub Pages looks like it gives you this opportunity. 
 - It uses markdown as a template language
-- You keep it on github. You just need to commit and push a new post
+- You keep it on github. All you need to do is just commit and push a new post. Though it will take couple minutes before changes will be reflected.
 - It offers powerful support for code snippets
 - It is written in Ruby ♥️
 
-Now instead of keeping things in gists, notes, codepen I'll be able to keep it here. I love this idea
+Now instead of keeping things in gists, notes, codepen I'll be able to keep them here. I love this idea
 
 Documentation to 
 - [Jekyll github](https://github.com/jekyll/jekyll)
