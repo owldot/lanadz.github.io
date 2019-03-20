@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "npm and jest on mac"
+title:  "npm and jest on mac. Command not found: jest"
 date:   2019-03-20 
 categories: configuration npm js osx
 ---
