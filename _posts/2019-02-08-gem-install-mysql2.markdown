@@ -3,6 +3,12 @@ layout: post
 title:  "gem install mysql2"
 date:   2019-02-08 
 categories: configuration development mysql rails
+keywords:
+  - gem install mysql2
+  - configuration
+  - gem install mysql2
+  - mysql 
+  - rails
 ---
 Oh, I was so pissed. 
 I had some free time this morning to help out my friend with some UI and it happen to me that I didn't have mysql installed.

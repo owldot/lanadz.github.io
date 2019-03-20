@@ -2,7 +2,13 @@
 layout: post
 title:  "You've Got Email"
 date:   2019-02-08 
-categories: action_mailer configuration development mailgun rails 
+categories: action_mailer configuration development mailgun rails
+keywords:
+  - Youve Got Email
+  - action_mailer
+  - configuration for mailgun rails
+  - mailgun rails 
+  - mailgun 
 ---
 
 Hey guys,
