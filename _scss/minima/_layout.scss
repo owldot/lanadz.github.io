@@ -200,6 +200,13 @@
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
+  .tags {
+    float: right;
+    .tag {
+      display: inline-block;
+      margin: 0 10px;
+    }
+  }
 }
 
 .post-link {
