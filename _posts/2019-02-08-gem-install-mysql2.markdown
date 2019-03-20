@@ -2,7 +2,11 @@
 layout: post
 title:  "gem install mysql2"
 date:   2019-02-08 
-categories: configuration development mysql rails
+tags: 
+    - configuration 
+    - development 
+    - mysql 
+    - rails
 keywords:
   - gem install mysql2
   - configuration

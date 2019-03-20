@@ -2,7 +2,10 @@
 layout: post
 title:  "SASS and Rails Asset Pipeline. Remove duplicates of imports."
 date:   2019-02-20 
-categories: development rails sass
+tags: 
+  - development 
+  - rails 
+  - css
 keywords:
   - SASS and Rails Asset Pipeline Remove duplicates of imports
   - rails sass
