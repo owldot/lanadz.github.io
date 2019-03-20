@@ -212,6 +212,10 @@
 /**
  * Posts
  */
+.post.h-entry {
+  background: white;
+  padding: $spacing-unit;
+}
 .post-header {
   margin-bottom: $spacing-unit;
 }

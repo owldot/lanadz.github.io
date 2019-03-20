@@ -28,6 +28,9 @@ github_username:  lanadz
 # Build settings
 markdown: kramdown
 #theme: minima
+sass:
+  sass_dir: /_scss
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
