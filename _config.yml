@@ -16,10 +16,9 @@
 title: Dev Journal
 email: svitlana.dzyuban@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi,
-  My name is Lana.
-  I am a software engineer and this is a place I am going to share whatever I want :)
-  I really hope you find something interesting for yourself
+  Lana Dz (Svitlana Dzyuban) - Full Stack Developer.
+  Dev Journal is my personal sharing place.
+  I really hope you find something interesting and helpful here.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: SvitlanaDz

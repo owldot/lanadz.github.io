@@ -181,6 +181,7 @@ pre {
   margin-left: auto;
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
+
   @extend %clearfix;
 
   @include media-query($on-laptop) {
@@ -191,8 +192,18 @@ pre {
   }
 }
 
+header .wrapper {
+  height: $base-line-height * $base-font-size * 2.25;
+}
 
-
+.image-holder {
+  height: 100%;
+  float: left;
+  margin-right: $spacing-unit;
+  img {
+    height: 100%;
+  }
+}
 /**
  * Clearfix
  */
