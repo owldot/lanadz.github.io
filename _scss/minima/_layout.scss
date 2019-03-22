@@ -32,7 +32,10 @@
   .nav-trigger {
     display: none;
   }
-
+  .trigger {
+    background: $grey-color-dark;
+    color: white;
+  }
   .menu-icon {
     display: none;
   }
@@ -51,8 +54,8 @@
     position: absolute;
     top: 9px;
     right: $spacing-unit / 2;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
+    background: $grey-color-dark;
+    border: 1px solid $grey-color;
     border-radius: 5px;
     text-align: right;
 
@@ -63,6 +66,8 @@
       height: 36px;
       z-index: 2;
       cursor: pointer;
+      color: white;
+
     }
 
     .menu-icon {
@@ -75,7 +80,7 @@
       text-align: center;
 
       > svg {
-        fill: $grey-color-dark;
+        fill: white;
       }
     }
 
