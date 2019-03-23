@@ -10,8 +10,6 @@ keywords:
 ---
 Hi,
 
-As I am preparing to get a job as a Front End Developer I am learning a lot of JS recently.
-It's nothing like it was 5+ years ago, haha.
-Yeah, so you probably know that egghead is an awesome resource and [learn es6](https://egghead.io/courses/learn-es6-ecmascript-2015) is awesome in particular. Short chunks of valuable information.
+Yeah, so probably you know that egghead is an awesome resource and [learn es6](https://egghead.io/courses/learn-es6-ecmascript-2015) is awesome in particular. Especially if you are looking to refresh your knowledge of ES6. Short chunks of valuable information.
 
 Recommend!
