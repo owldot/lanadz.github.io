@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "ES6 course recommendation"
+date:   2019-03-23
+tags:
+  - js
+  - recommendation
+keywords:
+  - es6 course recomendation
+---
+Hi,
+
+As I am preparing to get a job as a Front End Developer I am learning a lot of JS recently.
+It's nothing like it was 5+ years ago, haha.
+Yeah, so you probably know that egghead is an awesome resource and [learn es6](https://egghead.io/courses/learn-es6-ecmascript-2015) is awesome in particular. Short chunks of valuable information.
+
+Recommend!
