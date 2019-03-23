@@ -53,11 +53,12 @@
   @include media-query($on-palm) {
     position: absolute;
     top: 9px;
-    right: $spacing-unit / 2;
+    right: 0;
     background: $grey-color-dark;
-    border: 1px solid $grey-color;
+    border: none;
     border-radius: 5px;
-    text-align: right;
+    text-align: center;
+    min-width: 50vw;
 
     label[for="nav-trigger"] {
       display: block;
@@ -67,7 +68,7 @@
       z-index: 2;
       cursor: pointer;
       color: white;
-
+      margin-right: 5px;
     }
 
     .menu-icon {
@@ -102,7 +103,6 @@
         margin-right: 0;
       }
 
-      margin-left: 20px;
     }
   }
 }
