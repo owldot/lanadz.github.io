@@ -1,17 +1,17 @@
 ---
 layout: post
 title:  "You've Got Email"
-date:   2019-02-08 
-tags: 
-  - configuration 
-  - development 
+date:   2019-02-08
+tags:
+  - configuration
+  - development
   - rails
 keywords:
   - Youve Got Email
   - action_mailer
   - configuration for mailgun rails
-  - mailgun rails 
-  - mailgun 
+  - mailgun rails
+  - mailgun
 ---
 
 Hey guys,
@@ -19,6 +19,7 @@ Hey guys,
 Today I've spent some time setting up emails for my [educards.owldot.com](educards.owldot.com)
 
 That was a pretty great experience as I never did it before. I mean all configuration for production from scratch.
+<!--more-->
 The task was to send welcome email to new users. And also notify me by email that I've got a new user registered to EduCards. Common task, right? So, what I used:
 
 - Rails Action Mailer is a common library
@@ -34,7 +35,7 @@ First thought was just use Gmail's SMTP configuration and that's it. Something l
 
 {% highlight ruby %}
     # Add following to config/environments/$RAILS_ENV.rb
-        
+
     config.action_mailer.delivery_method = :smtp
     config.action_mailer.smtp_settings = {
       address:              'smtp.gmail.com',

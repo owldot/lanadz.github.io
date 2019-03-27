@@ -1,16 +1,16 @@
 ---
 layout: post
 title:  "SASS and Rails Asset Pipeline. Remove duplicates of imports."
-date:   2019-02-20 
-tags: 
-  - development 
-  - rails 
+date:   2019-02-20
+tags:
+  - development
+  - rails
   - css
 keywords:
   - SASS and Rails Asset Pipeline Remove duplicates of imports
   - rails sass
   - Remove duplicates of imports sass
-  - Asset Pipeline 
+  - Asset Pipeline
 ---
 Hi there,
 
@@ -19,7 +19,7 @@ Another day another problem :)
 Let me show what I noticed with my css on the project.
 
 Here is the structure of the project, which is common for most rails project, I think
-
+<!--more-->
 In my `application.sass` I had
 
 {% highlight html %}
@@ -85,6 +85,6 @@ Which basically means we need to @import our files instead of *=require. So easy
 @import 'file3'
 {% endhighlight %}
 
-After that you will not have any issues with duplications or scope problems. 
+After that you will not have any issues with duplications or scope problems.
 
 Thanks for reading!

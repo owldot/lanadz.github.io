@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "CSS vh and vw, and %. So What's The Difference?"
-date:   2019-03-12 
-tags: 
+date:   2019-03-12
+tags:
  - css
 keywords:
   - CSS vh and vw and percent difference
@@ -10,27 +10,27 @@ keywords:
 ---
 Hi there,
 
-This article will be short one :) 
+This article will be short one :)
 
-Yesterday when I was fixing layout I asked what's the difference between units vh/vw and % 
-Let's see an example 
-
+Yesterday when I was fixing layout I asked what's the difference between units vh/vw and %
+Let's see an example
+<!--more-->
 {% highlight html %}
-    <style> 
+    <style>
       .vw-style {
         width: 50vw;
         background-color: green;
       }
-    
+
       .percent-style {
         width: 50%;
         background-color: red;
       }
-    
+
     </style>
-    
-    
-    <div class="percent-style">50%</div> 
+
+
+    <div class="percent-style">50%</div>
     <div class="vw-style">50vw</div>
 {% endhighlight %}
 
@@ -46,30 +46,30 @@ Now let's see slightly different case. We will put our divs into parent div whic
         width: 50vw;
         background-color: green;
       }
-      
+
       .percent-style {
         width: 50%;
         background-color: red;
       }
-        
+
       .parent {
         padding: 10px;
         width: 50%;
         background-color: yellow;
       }
     </style>
-    
-    <div class="parent"> 
-        <div class="percent-style">50%</div> 
-    </div> 
-        
-    <div class="parent"> 
-        <div class="vw-style">50vw</div> 
+
+    <div class="parent">
+        <div class="percent-style">50%</div>
+    </div>
+
+    <div class="parent">
+        <div class="vw-style">50vw</div>
     </div>
 {% endhighlight %}
 
-In this case child div with width 50% will take 50% of parent's width and child div with width 50vw will still keep 50% of viewport (the browser window size) and not parent div. 
-Like this: 
+In this case child div with width 50% will take 50% of parent's width and child div with width 50vw will still keep 50% of viewport (the browser window size) and not parent div.
+Like this:
 
 ![50% in 50%](/assets/Screenshot 2019-03-13 at 9.33.20 AM.png)
 

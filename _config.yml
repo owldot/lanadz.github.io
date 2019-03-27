@@ -33,7 +33,11 @@ sass:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-paginate
 
+paginate: 9
+
+excerpt_separator: <!--more-->
 permalink: /tags/:title/
 
 # Exclude from processing.

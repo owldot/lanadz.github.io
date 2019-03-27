@@ -14,10 +14,10 @@ Hi,
 Today I want to share with you how to add tags/categories to your awesome blog
 
 Basically, I was following this [guide](https://blog.webjeda.com/jekyll-categories/)
+<!--more-->
+Shortly,
 
-Shortly, 
-
-- you need to create permalink in your `_config.yml` 
+- you need to create permalink in your `_config.yml`
 
     `permalink: /tags/:title/`
 
@@ -54,9 +54,8 @@ title: Tags
 
 - add `tags` key with array of values to your front matter to each of your post
 {% highlight yaml %}
-tags: 
+tags:
     - tag1
     - tag2
 {% endhighlight %}
-  
- 
+

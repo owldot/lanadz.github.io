@@ -200,9 +200,15 @@
   list-style: none;
 
   > li {
+    position: relative;
     margin-bottom: $spacing-unit;
     background-color: white;
     padding: 15px;
+
+    .preview {
+      font-size: small;
+      color: $grey-color;
+    }
   }
 
   a {
@@ -217,6 +223,8 @@
 
 .tags {
   float: right;
+  position: relative;
+  bottom: 20px;
 
   .tag {
     display: inline-block;

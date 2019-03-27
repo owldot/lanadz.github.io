@@ -17,7 +17,7 @@ This will run webbrick and serve current directory on port 9090 (you can change 
 {% highlight bash%}
 ruby -rwebrick -e'\''WEBrick::HTTPServer.new(:Port => 9090, :DocumentRoot => Dir.pwd).start'\''
 {% endhighlight %}
-
+<!--more-->
 
 I like to have this as a alias on my computer. Add this to your `.bash*` file. Than command `fakeserver` will be available for you
 
