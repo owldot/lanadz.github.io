@@ -246,6 +246,10 @@
   }
 }
 
+.post.h-entry .tags {
+  position: static;
+}
+
 .post-link {
   display: block;
   @include relative-font-size(1.5);
