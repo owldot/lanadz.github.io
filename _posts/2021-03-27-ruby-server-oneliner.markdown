@@ -19,7 +19,7 @@ ruby -rwebrick -e'\''WEBrick::HTTPServer.new(:Port => 9090, :DocumentRoot => Dir
 {% endhighlight %}
 <!--more-->
 
-I like to have this as a alias on my computer. Add this to your `.bash*` file. Than command `fakeserver` will be available for you
+I like to have this as a alias on my computer. Add this to your `.bash*` file. Then command `fakeserver` will be available for you
 
 {% highlight bash%}
 alias fakeserver='ruby -rwebrick -e'\''WEBrick::HTTPServer.new(:Port => 9090, :DocumentRoot => Dir.pwd).start'\'''
