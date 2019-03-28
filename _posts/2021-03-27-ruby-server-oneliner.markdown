@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ruby Server Oneliner"
-date:   2019-03-23
+date:   2019-03-27
 tags:
   - ruby
   - command line
