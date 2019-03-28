@@ -12,7 +12,7 @@ keywords:
 ---
 When you need to have a web server there is this command available for you.
 
-This will run webbrick and serve current directory on port 9090 (you can change it)
+This will run webrick and serve current directory on port 9090 (you can change it)
 
 {% highlight bash%}
 ruby -rwebrick -e'\''WEBrick::HTTPServer.new(:Port => 9090, :DocumentRoot => Dir.pwd).start'\''
