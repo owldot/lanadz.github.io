@@ -16,7 +16,7 @@ keywords:
 ...I googled for an hour
 
 ...And I still was facing that `process.env.API_URL` is `undefined`
-
+<!--more-->
 Somehow I missed this from official [documentation](https://facebook.github.io/create-react-app/docs/adding-custom-environment-variables)
 
 | Note: You must create custom environment variables beginning with REACT_APP_. Any other variables except NODE_ENV will be ignored to avoid accidentally exposing a private key on the machine that could have the same name. Changing any environment variables will require you to restart the development server if it is running.
