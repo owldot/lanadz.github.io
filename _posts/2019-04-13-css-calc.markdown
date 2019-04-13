@@ -25,9 +25,25 @@ Nice thing it's supported by all major browsers
 
 Now footer might be implemented in easy way, instead of looking for hacks with negative margins
 {% highlight css %}
-.container
-  min-height: calc(100% - 50px)
+body {
+  background: red;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
 
-.footer
-    height: 50px
+.container {
+  background-color: cornflowerblue;
+  min-height: calc(100% - 80px);
+}
+
+.footer {
+  background-color: yellow;
+  height: 80px;
+}
 {% endhighlight %}
+
+![screenshot](/assets/css_calc.png)
+
+You may notice `vh` unit at rules for `body`. That's awasome units!
+You can find some info about `vh` and `vw` in the [article](/tags/css-vh-vw-percents-the-difference/)
