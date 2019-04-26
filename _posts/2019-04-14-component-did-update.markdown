@@ -3,7 +3,7 @@ layout: post
 title: "React: Change state in componentDidUpdate()"
 date: 2019-04-14
 tags:
-- reach
+- react
 keywords:
 - react
 - change state in componentDidUpdate
