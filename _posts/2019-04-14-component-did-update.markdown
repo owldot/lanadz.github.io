@@ -14,6 +14,7 @@ keywords:
 
 I've recieved new props and needed to update a state.
 Legit place to do that, as I thoght, was `componentDidUpdate`.
+<!--more-->
 
 So, you go to `componentDidUpdate` you set state as usual and you encouner nice error..
 caused by infinite loop of setting state which triggers `componentDidUpdate`..
