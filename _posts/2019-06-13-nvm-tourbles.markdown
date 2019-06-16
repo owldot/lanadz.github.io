@@ -9,8 +9,7 @@ keywords:
 - nvm is not compatible with npm config prefix
 - nvm is forgetting node for new terminal window
 ---
-| nvm is not compatible with the npm config "prefix" option: currently set to "/usr/local/Cellar/nvm/0.34.0/versions/node/v10.16.0"
-Run `npm config delete prefix` or `nvm use --delete-prefix v10.16.0 --silent` to unset it.
+| nvm is not compatible with the npm config "prefix" option: currently set to "/usr local/Cellar/nvm/0.34.0/versions/node/v10.16.0" <br/>Run `npm config delete prefix` or `nvm use --delete-prefix v10.16.0 --silent` to unset it.
 
 Looks familiar?
 
