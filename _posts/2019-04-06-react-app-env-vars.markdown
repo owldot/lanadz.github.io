@@ -24,5 +24,6 @@ Somehow I missed this from official [documentation](https://facebook.github.io/c
 That's smart, but 🤬
 
 Anyways, don't forget to add `REACT_APP_` prefix to your variables
+After renaming my environment variable to REACT_APP_API_URL I could carry on with my tasks 😊
 
 Happy coding!
