@@ -320,9 +320,23 @@
   align-items: center;
   border-top: 1px solid $brand-color;
   padding-top: 10px;
+
   .button {
     display: flex;
     align-items: center;
     margin: 0 2px;
+    padding: 10px;
+    color:  desaturate($brand-color, 30%);;
+    &:hover {
+      text-decoration: none;
+      color: saturate($brand-color, 50%);
+      svg {
+        fill: saturate($brand-color, 50%);
+      }
+    }
+    svg {
+      margin-right: 5px;
+      fill: desaturate($brand-color, 30%);
+    }
   }
 }
