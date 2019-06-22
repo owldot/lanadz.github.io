@@ -267,3 +267,15 @@ table {
   font-size: 0.7em;
   color: $grey-color;
 }
+
+.errorDiv {
+  color: #000000;
+  font-weight: 600;
+  clear: both;
+  text-align: center;
+  .content {
+    display: inline-block;
+    background-color: #f7646423;
+    padding: 10px;
+  }
+}
