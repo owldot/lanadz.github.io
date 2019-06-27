@@ -11,11 +11,11 @@ keywords:
   - dynamodb locally
 ---
 Install DynamoDB locally follow:
-https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html
+[https://docs.aws.amazon.com](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html)
 
 and then this tool to see it nicely
-https://github.com/aaronshaf/dynamodb-admin
+[https://github.com/aaronshaf/dynamodb-admin](https://github.com/aaronshaf/dynamodb-admin)
 
 Another helpful thing is (not related to DynamoDB):
 Hot reload. Automatically restarting the node application when file changes in the directory are detected
-https://www.npmjs.com/package/nodemon
+[https://www.npmjs.com/package/nodemon](https://www.npmjs.com/package/nodemon)
