@@ -6,6 +6,7 @@ tags:
   - configuration
   - npm
   - databases
+  - node
 keywords:
   - dynamodb locally
 ---
@@ -14,3 +15,7 @@ https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.D
 
 and then this tool to see it nicely
 https://github.com/aaronshaf/dynamodb-admin
+
+Another helpful thing is (not related to DynamoDB):
+Hot reload. Automatically restarting the node application when file changes in the directory are detected
+https://www.npmjs.com/package/nodemon
