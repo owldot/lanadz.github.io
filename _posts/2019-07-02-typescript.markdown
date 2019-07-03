@@ -154,4 +154,19 @@ class Employee {
 }
 ```
 
-##
+## Tuples
+
+Tuples in typescript is an Array with a specific order for elements ;)
+
+```typescript
+const pepsi: [string, boolean, number] = ['brown', true, 40]; //color, carbonated, amount of sugar
+```
+
+or
+
+```typescript
+type Drink = [string, boolean, number];
+
+const pepsi: Drink = ['brown', true, 40]; //color, is carbonated, amount of sugar
+const tea: Drink = ['green', false, 0]; //color, is carbonated, amount of sugar
+```
