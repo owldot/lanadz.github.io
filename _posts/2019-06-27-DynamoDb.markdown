@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Install DynamoDB locally"
-date:   2019-06-27
+title: 'Install DynamoDB locally'
+date: 2019-06-27
 tags:
-  - configuration
   - npm
   - databases
   - node
 keywords:
   - dynamodb locally
 ---
+
 Install DynamoDB locally follow:
 [https://docs.aws.amazon.com](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html)
 
