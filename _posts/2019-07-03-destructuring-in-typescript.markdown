@@ -49,3 +49,28 @@ const { age, name }: ......... = profile; // we cannot say type is number, becau
 ```
 
 🧐
+
+Just a little bit more complex example
+
+```typescript
+interface Vehicle {
+  name: string;
+  year: Date;
+  broken: boolean;
+}
+
+const printVehicle = ({ name, year, broken }: Vehicle): void => {
+  //see destructuring and type annotation  ^^^^
+  console.log(name);
+  console.log(year);
+  console.log(broken);
+};
+
+const oldCivic = {
+  name: 'civic',
+  year: new Date(1999),
+  broken: true
+};
+
+printVehicle(oldCivic);
+```
