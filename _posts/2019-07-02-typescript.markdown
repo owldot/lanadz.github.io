@@ -15,22 +15,7 @@ I've start learning `typescript` for project purposes. Typescript is nice, imho.
 
 <!--more-->
 
-## Helpful tool ts-node
-
-`npm install -g ts-node` helps you to test your typescript from console without prior compiling `ts` files. Basically, instead of:
-
-```
-$tsc file.ts
-$node file.js
-```
-
-you will be able to do:
-
-```
-$ts-node file.ts
-```
-
-Pretty handy.
+## Language
 
 ## Interfaces
 
