@@ -16,9 +16,11 @@ keywords:
 
 ### VSCode
 
-If you are digging through type annotation file `*.d.ts` you might find it helpfull to fold some declarationd to level 2 only
-Hit `cmd`+`shift`+`P` to get the command pallete and look for `Fold Level 2`
-After that you will see declarations collapsed
+If you are digging through type annotation file `*.d.ts` you might find it helpfull to fold some declarations to level 2 only.
+
+Hit `cmd`+`shift`+`P` to get the command pallete and look for `Fold Level 2`.
+
+After that you will see declarations collapsed:
 
 <div style="width: 100%; text-align: center; padding: 20px 0;">
 <img src="{{site.baseurl}}/assets/ts.fold.png"/>
