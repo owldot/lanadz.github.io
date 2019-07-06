@@ -1,0 +1,30 @@
+---
+layout: post
+title: 'Memories of this week'
+date: 2019-07-05
+tags:
+  - personal space
+keywords:
+  - photos
+---
+## Little nice memories of this week
+<!--more-->
+<div class="image-with-title">
+<img src="{{site.baseurl}}/assets/peach.png" />
+<p>My Friday peach for Andrew from office</p>
+</div>
+
+<div class="image-with-title">
+<img src="{{site.baseurl}}/assets/building.png" />
+<p>Myk's office and a palm. Urban beauty</p>
+</div>
+
+<div class="image-with-title">
+<img src="{{site.baseurl}}/assets/marinaevening.png" />
+<p>I should remember how beautiful is world around me</p>
+</div>
+
+<div class="image-with-title">
+<img src="{{site.baseurl}}/assets/certificate.png" />
+<p>First week I am learning Typescript and my first certificate 😅</p>
+</div>

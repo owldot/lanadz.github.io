@@ -2,179 +2,184 @@
  * Site header
  */
 .site-header {
-  border-bottom: 1px solid $grey-color-light;
-  min-height: $spacing-unit * 1.865;
-  background: $grey-color-dark;
+    border-bottom: 1px solid $grey-color-light;
+    min-height: $spacing-unit * 1.865;
+    background: $grey-color-dark;
 
-  // Positioning context for the mobile navigation icon
-  position: relative;
+    // Positioning context for the mobile navigation icon
+    position: relative;
 }
 
 .site-title {
-  @include relative-font-size(1.625);
-  font-weight: 300;
-  line-height: $base-line-height * $base-font-size * 2.25;
-  letter-spacing: -1px;
-  margin-bottom: 0;
-  float: left;
-  color: white;
+    @include relative-font-size(1.625);
 
-  &, a,
-  &:visited {
+    font-weight: 300;
+    line-height: $base-line-height * $base-font-size * 2.25;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
     color: white;
-  }
+
+    &, a,
+    &:visited {
+        color: white;
+    }
 }
 
 .site-nav {
-  float: right;
-  line-height: $base-line-height * $base-font-size * 2.25;
+    float: right;
+    line-height: $base-line-height * $base-font-size * 2.25;
 
-  .nav-trigger {
-    display: none;
-  }
-  .trigger {
-    background: $grey-color-dark;
-    color: white;
-  }
-  .menu-icon {
-    display: none;
-  }
-
-  .page-link {
-    color: white;
-    line-height: $base-line-height;
-
-    // Gaps between nav items, but not on the last one
-    &:not(:last-child) {
-      margin-right: 20px;
+    .nav-trigger {
+        display: none;
     }
-  }
 
-  @include media-query($on-palm) {
-    position: absolute;
-    top: 9px;
-    right: 0;
-    background: $grey-color-dark;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    min-width: 50vw;
-    z-index: 2;
-
-    label[for="nav-trigger"] {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 36px;
-      z-index: 2;
-      cursor: pointer;
-      color: white;
-      margin-right: 5px;
+    .trigger {
+        background: $grey-color-dark;
+        color: white;
     }
 
     .menu-icon {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center;
-
-      > svg {
-        fill: white;
-      }
-    }
-
-    input ~ .trigger {
-      clear: both;
-      display: none;
-    }
-
-    input:checked ~ .trigger {
-      display: block;
-      padding-bottom: 5px;
+        display: none;
     }
 
     .page-link {
-      display: block;
-      padding: 5px 10px;
+        color: white;
+        line-height: $base-line-height;
 
-      &:not(:last-child) {
-        margin-right: 0;
-      }
-
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
     }
-  }
-}
 
+    @include media-query($on-palm) {
+        position: absolute;
+        top: 9px;
+        right: 0;
+        background: $grey-color-dark;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        min-width: 50vw;
+        z-index: 2;
+
+        label[for="nav-trigger"] {
+            display: block;
+            float: right;
+            width: 36px;
+            height: 36px;
+            z-index: 2;
+            cursor: pointer;
+            color: white;
+            margin-right: 5px;
+        }
+
+        .menu-icon {
+            display: block;
+            float: right;
+            width: 36px;
+            height: 26px;
+            line-height: 0;
+            padding-top: 10px;
+            text-align: center;
+
+            > svg {
+                fill: white;
+            }
+        }
+
+        input ~ .trigger {
+            clear: both;
+            display: none;
+        }
+
+        input:checked ~ .trigger {
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        .page-link {
+            display: block;
+            padding: 5px 10px;
+
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+    }
+}
 
 /**
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
+    border-top: 1px solid $grey-color-light;
+    padding: $spacing-unit 0;
 }
 
 .footer-heading {
-  @include relative-font-size(1.125);
-  margin-bottom: $spacing-unit / 2;
+    @include relative-font-size(1.125);
+
+    margin-bottom: $spacing-unit / 2;
 }
 
 .contact-list,
 .social-media-list {
-  list-style: none;
-  margin-left: 0;
+    list-style: none;
+    margin-left: 0;
 }
 
 .footer-col-wrapper {
-  @include relative-font-size(0.9375);
-  color: $grey-color;
-  margin-left: -$spacing-unit / 2;
-  @extend %clearfix;
+    @include relative-font-size(0.9375);
+
+    color: $grey-color;
+    margin-left: -$spacing-unit / 2;
+
+    @extend %clearfix;
 }
 
 .footer-col {
-  float: left;
-  margin-bottom: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
+    float: left;
+    margin-bottom: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
 }
 
 .footer-col-1 {
-  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-  width: calc(35% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+    width: calc(35% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {
-  width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-  width: calc(20% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+    width: calc(20% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-3 {
-  width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-  width: calc(45% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+    width: calc(45% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {
-  .footer-col-1,
-  .footer-col-2 {
-    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-    width: calc(50% - (#{$spacing-unit} / 2));
-  }
+    .footer-col-1,
+    .footer-col-2 {
+        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+        width: calc(50% - (#{$spacing-unit} / 2));
+    }
 
-  .footer-col-3 {
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width: calc(100% - (#{$spacing-unit} / 2));
-  }
+    .footer-col-3 {
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width: calc(100% - (#{$spacing-unit} / 2));
+    }
 }
 
+
 @include media-query($on-palm) {
-  .footer-col {
-    float: none;
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width: calc(100% - (#{$spacing-unit} / 2));
-  }
+    .footer-col {
+        float: none;
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width: calc(100% - (#{$spacing-unit} / 2));
+    }
 }
 
 
@@ -182,161 +187,201 @@
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
-  background-color: $grey-color-light;
-
-  flex: 1;
+    padding: $spacing-unit 0;
+    background-color: $grey-color-light;
+    flex: 1;
 }
 
 .page-heading {
-  @include relative-font-size(2);
+    @include relative-font-size(2);
 }
 
 .post-list-heading {
-  @include relative-font-size(1.75);
+    @include relative-font-size(1.75);
 }
 
 .post-list {
-  margin-left: 0;
-  list-style: none;
+    margin-left: 0;
+    list-style: none;
 
-  > li {
-    position: relative;
-    margin-bottom: $spacing-unit;
-    background-color: white;
-    padding: 15px;
+    > li {
+        position: relative;
+        margin-bottom: $spacing-unit;
+        background-color: white;
+        padding: 15px;
 
-    .preview {
-      font-size: small;
-      color: $grey-color;
+        .preview {
+            font-size: small;
+            color: $grey-color;
+        }
     }
-  }
 
-  a {
-    text-decoration: none;
-  }
+    a {
+        text-decoration: none;
+    }
 }
 
 .post-meta {
-  font-size: $small-font-size;
-  color: $grey-color;
-  background-color: lighten(complement($brand-color), 40%);
-  padding: 1px 10px;
-  margin: 0 5px;
-  border-radius: 4px;
-  font-size: small;
-  display: inline;
+    font-size: $small-font-size;
+    color: $grey-color;
+    background-color: lighten(complement($brand-color), 40%);
+    padding: 1px 10px;
+    margin: 0 5px;
+    border-radius: 4px;
+    font-size: small;
+    display: inline;
+}
 
+.image-with-title {
+    height: 90vh;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px 0px 5px $grey-color-light;
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    img {
+        height: 90%;
+        width: auto;
+        object-fit: contain;
+    }
+
+    p {
+        padding-top: 20px;
+    }
+}
+
+.image-with-title-dont-change-size {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: smaller;
+        margin-top: 10px;
+    }
 }
 
 .tags {
-  float: right;
-  position: relative;
-  bottom: 20px;
+    float: right;
+    position: relative;
+    bottom: 20px;
 
-  .tag {
-    display: inline-block;
-    font-size: small;
-    background-color: lighten($brand-color, 30%);
-    color: white;
-    text-decoration: none;
-    padding: 0 10px;
-    margin: 0 5px;
-    border-radius: 4px;
+    .tag {
+        display: inline-block;
+        font-size: small;
+        background-color: lighten($brand-color, 30%);
+        color: white;
+        text-decoration: none;
+        padding: 0 10px;
+        margin: 0 5px;
+        border-radius: 4px;
 
-    &:hover {
-      background-color: lighten($brand-color, 20%);
+        &:hover {
+            background-color: lighten($brand-color, 20%);
+        }
+
+        &:last-child {
+            margin: 0 0 0 5px;
+        }
     }
-
-    &:last-child {
-      margin: 0 0 0 5px;
-    }
-  }
 }
 
 .post.h-entry .tags {
-  position: static;
+    position: static;
 }
 
 .post-link {
-  display: block;
-  @include relative-font-size(1.5);
-}
+    display: block;
 
+    @include relative-font-size(1.5);
+}
 
 /**
  * Posts
  */
 .post.h-entry {
-  background: white;
-  padding: $spacing-unit;
+    background: white;
+    padding: $spacing-unit;
 }
 
 .post-header {
-  margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit;
 }
 
 .post-title {
-  @include relative-font-size(2.625);
-  letter-spacing: -1px;
-  line-height: 1;
+    @include relative-font-size(2.625);
 
-  @include media-query($on-laptop) {
-    @include relative-font-size(2.25);
-  }
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+        @include relative-font-size(2.25);
+    }
 }
 
 .post-content {
-  margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit;
 
-  h2 {
-    @include relative-font-size(2);
+    h2 {
+        @include relative-font-size(2);
 
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.75);
+        @include media-query($on-laptop) {
+            @include relative-font-size(1.75);
+        }
     }
-  }
 
-  h3 {
-    @include relative-font-size(1.625);
+    h3 {
+        @include relative-font-size(1.625);
 
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.375);
+        @include media-query($on-laptop) {
+            @include relative-font-size(1.375);
+        }
     }
-  }
 
-  h4 {
-    @include relative-font-size(1.25);
+    h4 {
+        @include relative-font-size(1.25);
 
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.125);
+        @include media-query($on-laptop) {
+            @include relative-font-size(1.125);
+        }
     }
-  }
 }
 
 .share-page {
-  justify-content: flex-end;
-  display: flex;
-  align-items: center;
-  border-top: 1px solid $brand-color;
-  padding-top: 10px;
-
-  .button {
+    justify-content: flex-end;
     display: flex;
     align-items: center;
-    margin: 0 2px;
-    padding: 10px;
-    color:  desaturate($brand-color, 30%);;
-    &:hover {
-      text-decoration: none;
-      color: saturate($brand-color, 50%);
-      svg {
-        fill: saturate($brand-color, 50%);
-      }
+    border-top: 1px solid $brand-color;
+    padding-top: 10px;
+
+    .button {
+        display: flex;
+        align-items: center;
+        margin: 0 2px;
+        padding: 10px;
+        color: desaturate($brand-color, 30%);
+
+        &:hover {
+            text-decoration: none;
+            color: saturate($brand-color, 50%);
+
+            svg {
+                fill: saturate($brand-color, 50%);
+            }
+        }
+
+        svg {
+            margin-right: 5px;
+            fill: desaturate($brand-color, 30%);
+        }
     }
-    svg {
-      margin-right: 5px;
-      fill: desaturate($brand-color, 30%);
-    }
-  }
 }
