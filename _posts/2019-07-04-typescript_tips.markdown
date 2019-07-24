@@ -22,8 +22,9 @@ Hit `cmd`+`shift`+`P` to get the command pallete and look for `Fold Level 2`.
 
 After that you will see declarations collapsed:
 
-<div style="width: 100%; text-align: center; padding: 20px 0;">
+<div class="image-with-title-dont-change-size">
 <img src="{{site.baseurl}}/assets/ts.fold.png"/>
+<p>Folded to level 2 and now easily can be seen all declarations</p>
 </div>
 <!--more-->
 ### Helpful tool ts-node
