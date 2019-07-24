@@ -155,3 +155,22 @@ type Drink = [string, boolean, number];
 const pepsi: Drink = ['brown', true, 40]; //color, is carbonated, amount of sugar
 const tea: Drink = ['green', false, 0]; //color, is carbonated, amount of sugar
 ```
+
+## Type guards
+
+If you need to access other properties and methods of the object that is not restricted by the interface or type and stop typescript complaining,
+type guards wll be handy
+
+```typescript
+//typescript expects `collection` to be either number[] | string
+
+function test(collection: number[] | string) {
+  collection[index] = 1; //gives you an error because in case of string []= is not permitted (string is immutable)
+  if (collection instance of Array) {
+    collection[index] = 1; // is fine because []= is available for arrays and typescript compliler will allow you to do that
+  }
+  if (typeof collection === 'string') {
+    collection.toLowerCase() // typescript aware that we are working with string here and not with array of numberss
+  }
+}
+```
