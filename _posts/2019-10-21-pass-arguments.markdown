@@ -14,10 +14,13 @@ keywords:
 So, let's say you need to add new flag `--watch` to your script from `package.json` In this case to "test" script
 
 ```json
-...
-scripts: {
+
+
+"scripts": {
 "test": "jest"
 }
+
+
 ```
 
 Yes, you can add `"test": "jest --watch"` to your `package.json`, but that might be not very convinient, insted you can add this directly in terminal.
@@ -31,10 +34,10 @@ won't work as expected because `--watch` will be considered as a part of npm com
 So, what you should do instead is 
 
 
-```
+```bash
 $ npm test -- --watch
 ```
 
 First pair of `--` associates arguments with `npm` (in our case we don't need any) and second pair of `--` will associate with `test` command (which is in our case is `jest`)
 
-Hope you find that helpful
+Hope you find this info helpful ;)
