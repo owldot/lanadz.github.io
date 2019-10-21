@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Pass flags/arguments to command for internal command, for example t scripts in npm or yarn'
+title: 'Pass flags/arguments to command for internal command, for example to scripts in npm or yarn'
 date: 2019-10-21
 tags:
   - bash
