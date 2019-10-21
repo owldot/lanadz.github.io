@@ -14,13 +14,9 @@ keywords:
 So, let's say you need to add new flag `--watch` to your script from `package.json` In this case to "test" script
 
 ```json
-
-
 "scripts": {
-"test": "jest"
+  "test": "jest"
 }
-
-
 ```
 
 Yes, you can add `"test": "jest --watch"` to your `package.json`, but that might be not very convinient, insted you can add this directly in terminal.
