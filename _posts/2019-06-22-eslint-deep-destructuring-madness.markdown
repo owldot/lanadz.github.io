@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "ESLint: Destructure deeply nested objects and return default value for undefined "
+title: 'ESLint: Destructure deeply nested objects and return default value for undefined '
 date: 2019-06-22
 tags:
-- js
-- configuration
+  - javascript
+  - configuration
 keywords:
-- eslint destructuring
-- eslint destructuring deeply nested objects
-- js default value for undefined
+  - eslint destructuring
+  - eslint destructuring deeply nested objects
+  - js default value for undefined
 ---
 
 ESLint is awesome, yes it makes you better developer, but this error in my terminal
@@ -20,7 +20,9 @@ error:  Must use destructuring state assignment
 </div>
 
 drives me crazy sometimes!
+
 <!--more-->
+
 How should I fix that eslint error when I have this deeply nested object and I need to get `ip` field:
 
 ```JS
@@ -41,7 +43,7 @@ const loggedUserObj = {
 };
 ```
 
-often I  ended up with `// eslint-disable-next-line react/destructuring-assignment` and carry on 😅
+often I ended up with `// eslint-disable-next-line react/destructuring-assignment` and carry on 😅
 
 Recently I found how it can be done in a **right** way. Without further ado, look how we destructure simple object:
 
@@ -52,7 +54,9 @@ const obj = {
     }
 }
 ```
+
 will become nice:
+
 ```JS
 const { props } = obj;
 const { props: { field } } = obj;
@@ -60,6 +64,7 @@ const { props: { field } } = obj;
 console.log(props); // shows {field: "A"}
 console.log(field); // shows "A"
 ```
+
 See? So, similary, from our previous example with `loggedUserObj` object, to get `ip` field, you need:
 
 ```JS
@@ -75,6 +80,7 @@ const {
 
 console.log(ip); //shows "0.0.0.0"
 ```
+
 YAY!!🙌
 
 Now, what to do if you have `undefined`?
@@ -93,7 +99,9 @@ const {
 
 console.log(platform);// this will print undefined
 ```
+
 In this case you may want to have default value, and to get it is simple as
+
 ```
 const {
     loggedUser: {

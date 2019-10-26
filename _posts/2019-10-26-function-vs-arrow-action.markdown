@@ -10,7 +10,7 @@ keywords:
   - javascript arrow functions
 ---
 
-Here are couple examples of functions notations: simple and arrow functions
+Here are couple examples of functions and arrow functions
 
 - Definition
 
@@ -25,6 +25,8 @@ Here are couple examples of functions notations: simple and arrow functions
   >   this.name = name;
   > };
   > ```
+
+  <!--more-->
 
 - Objects, (classes)
 

@@ -1,48 +1,63 @@
 ---
 layout: post
-title:  "npm and jest on mac. Command not found: jest"
-date:   2019-03-20
+title: 'npm and jest on mac. Command not found: jest'
+date: 2019-03-20
 tags:
   - configuration
   - npm
-  - js
+  - javascript
 keywords:
   - jest
   - configuration npm js osx
   - command not found jest
 ---
+
 <style>
-    div.float {
-        float: right;
-        margin: 0 0 30px 0px;
-        box-shadow: -1px 1px 2px #ccc;
-    }
+  div.float {
+    float: right;
+    margin: 0 0 30px 0px;
+    box-shadow: -1px 1px 2px #ccc;
+  }
 </style>
 
 <div class="float">
-    <img src="/assets/sudo.jpg" alt="sudo comic story"/>
+  <img src="/assets/sudo.jpg" alt="sudo comic story" />
 </div>
 
 <div>
-    <p>
-        Hi,
-    <p>
-        I've started going through some exercises for JS (getting ready for interviews heheh)
-    <p>
-        And there they asked to have <strong>`jest`</strong> installed on my computer to run tests from those challenges
-        <!--more-->
-        <br/>
-        Oh, yes, <a href="https://jestjs.io/docs/en/getting-started.html">jest</a> looks very promising test framework
-        to me. Finally my TDD skills from Ruby world can be applied to JS 😄
-    <p>
-        After following installation guide and trying to run tests, I was receiving error <strong>`$ command not found:
-        jest`</strong>
-        <br/>
-        Solution was to add `sudo` before command (which wasn't mentioned in guide 😞)
-    <p>
-{% highlight bash %}
-sudo npm install -g jest
-{% endhighlight %}
-    <p>
-        Thanks
+  <p>
+    Hi,
+  </p>
+
+  <p>
+    I've started going through some exercises for JS (getting ready for
+    interviews heheh)
+  </p>
+
+  <p>
+    And there they asked to have <strong>`jest`</strong> installed on my
+    computer to run tests from those challenges
+    <!--more-->
+    <br />
+    Oh, yes,
+    <a href="https://jestjs.io/docs/en/getting-started.html">jest</a> looks very
+    promising test framework to me. Finally my TDD skills from Ruby world can be
+    applied to JS 😄
+  </p>
+
+  <p>
+    After following installation guide and trying to run tests, I was receiving
+    error <strong>`$ command not found: jest`</strong>
+    <br />
+    Solution was to add `sudo` before command (which wasn't mentioned in guide
+    😞)
+  </p>
+
+  <p>
+    {% highlight bash %} sudo npm install -g jest {% endhighlight %}
+  </p>
+
+  <p>
+    Thanks
+  </p>
 </div>

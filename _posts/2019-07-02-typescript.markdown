@@ -4,7 +4,7 @@ title: 'Bookmarks for Typescript'
 date: 2019-07-01
 tags:
   - typescript
-  - js
+  - javascript
 keywords:
   - typescript
   - ts-node

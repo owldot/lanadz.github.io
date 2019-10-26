@@ -4,7 +4,7 @@ title: 'Miscellaneous for Typescript, VSCode'
 date: 2019-07-04
 tags:
   - typescript
-  - js
+  - javascript
 keywords:
   - typescript tools
   - typescript configurations

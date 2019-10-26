@@ -1,13 +1,14 @@
 ---
 layout: post
-title:  "ES6 course recommendation"
-date:   2019-03-23
+title: 'ES6 course recommendation'
+date: 2019-03-23
 tags:
-  - js
+  - javascript
   - recommendation
 keywords:
   - es6 course recomendation
 ---
+
 Hi,
 
 Yeah, so probably you know that egghead is an awesome resource and [learn es6](https://egghead.io/courses/learn-es6-ecmascript-2015) is awesome in particular. Especially if you are looking to refresh your knowledge of ES6. Short chunks of valuable information.
