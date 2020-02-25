@@ -21,7 +21,7 @@ That was a pretty great experience as I never did it before. I mean all configur
 
 <!--more-->
 
-The task was to send welcome email to new users. And also notify me by email that I've got a new user registered to EduCards. Common task, right? So, what I used:
+The task was to send welcome email to the new users. And also notify me by email that I've got a new user registered to EduCards. Common task, right? So, what I used:
 
 - Rails Action Mailer is a common library
 - Mailgun - popular email service for sending, receiving and tracking email
