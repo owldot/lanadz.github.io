@@ -3,7 +3,7 @@ layout: post
 title: 'Memories of this week'
 date: 2019-07-05
 tags:
-  - myspace
+  - personal space
 keywords:
   - photos
 ---

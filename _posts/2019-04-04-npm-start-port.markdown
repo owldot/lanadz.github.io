@@ -3,8 +3,7 @@ layout: post
 title: 'Change Port For npm start'
 date: 2019-04-04
 tags:
-  - npm
-  - react
+  - terminal
 keywords:
   - default port npm start
   - change port for react app

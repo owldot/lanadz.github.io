@@ -3,7 +3,7 @@ layout: post
 title: 'SASS and Rails Asset Pipeline. Remove duplicates of imports.'
 date: 2019-02-20
 tags:
-  - rails
+  - backend
   - frontend
 keywords:
   - SASS and Rails Asset Pipeline Remove duplicates of imports
@@ -26,9 +26,9 @@ In my `application.sass` I had
 
 {% highlight html %}
 /\* _= require_tree .
-_= require_self
-_= require 'bulma.min'
-_/
+_= require*self
+*= require 'bulma.min'
+\_/
 
 @import "select2"
 @import "values.sass"

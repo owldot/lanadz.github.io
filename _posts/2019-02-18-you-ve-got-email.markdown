@@ -4,7 +4,7 @@ title: "You've Got Email"
 date: 2019-02-08
 tags:
   - terminal
-  - rails
+  - backend
 keywords:
   - Youve Got Email
   - action_mailer

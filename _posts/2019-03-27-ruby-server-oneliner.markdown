@@ -3,8 +3,8 @@ layout: post
 title: 'Ruby Server Oneliner'
 date: 2019-03-27
 tags:
-  - ruby
-  - teminal
+  - backend
+  - terminal
 keywords:
   - ruby server
   - webrick
