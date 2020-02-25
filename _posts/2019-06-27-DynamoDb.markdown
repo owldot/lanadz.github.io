@@ -3,9 +3,8 @@ layout: post
 title: 'Install DynamoDB locally'
 date: 2019-06-27
 tags:
-  - npm
-  - databases
-  - node
+  - terminal
+  - db
 keywords:
   - dynamodb locally
 ---

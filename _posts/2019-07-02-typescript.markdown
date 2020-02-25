@@ -3,7 +3,6 @@ layout: post
 title: 'Bookmarks for Typescript'
 date: 2019-07-01
 tags:
-  - typescript
   - javascript
 keywords:
   - typescript

@@ -3,7 +3,7 @@ layout: post
 title: 'Docker-compose up'
 date: 2020-01-15
 tags:
-  - bash
+  - terminal
 keywords:
   - bundle docker
 ---

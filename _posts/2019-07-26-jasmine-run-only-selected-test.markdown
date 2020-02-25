@@ -3,8 +3,7 @@ layout: post
 title: 'Jasmine. Run selected tests only'
 date: 2019-07-26
 tags:
-  - jasmine
-  - tests
+  - javascript
 keywords:
   - jasmine run selected tests only
   - npm test is slow
@@ -36,10 +35,10 @@ time jasmine-ts --config=./jasmine_fast.json
 
 don't forget to run `chmod +x run_test.sh`
 
-
 ## And here go results for
 
 This script:
+
 ```JSON
 {
     "test": "npm install && nyc --reporter lcov -e .ts --report-dir ./test/coverage jasmine-ts --config=jasmine.json && nyc report"
@@ -59,11 +58,11 @@ npm ERR! Test failed.  See above for more details.
 real	0m29.251s
 user	0m35.840s <<<<
 sys	0m2.828s
- ```
+```
 
- and `$./run_test.sh` for selected files only
+and `$./run_test.sh` for selected files only
 
- ```
+```
 15 specs, 5 failures
 Finished in 0.102 seconds
 Randomized with seed 92304 (jasmine --random=true --seed=92304)

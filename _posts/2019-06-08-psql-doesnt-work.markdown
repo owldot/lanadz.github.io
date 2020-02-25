@@ -3,7 +3,8 @@ layout: post
 title: 'psql: could not connect to server'
 date: 2019-06-08
 tags:
-  - configuration
+  - terminal
+  - db
 keywords:
   - psql could not connect to server
   - psql errors

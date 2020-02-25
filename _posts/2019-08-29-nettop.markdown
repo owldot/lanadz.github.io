@@ -3,8 +3,7 @@ layout: post
 title: 'Nettop - see your traffic'
 date: 2019-08-29
 tags:
-  - bash
-  - console
+  - terminal
 keywords:
   - see amount of network traffic
   - nettop concise
@@ -14,15 +13,14 @@ When you are using your mobile data you want to count your precious bytes.
 And in my case I don't want to install any 3-d party apps for such a simple task.
 
 Luckily on MacOS you have `nettop` command
+
 ```bash
 nettop -n -m route -k rx_dupe -k rx_ooo -k re-tx -k rtt_avg -k conn_att -k conn_est
 ```
+
 ...simple like that. It will provide you with enough statistics without any additional noise
 
 <center>First line will show your usage</center>
 ![First line will show your usage]({{site.baseurl}}/assets/first_line_nettop.png)
-
-
-
 
 You may read more about nettop [here](http://osxdaily.com/2013/06/07/watch-network-traffic-mac-os-x-nettop/)

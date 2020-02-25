@@ -3,7 +3,7 @@ layout: post
 title: 'Installing postgresql with brew'
 date: 2020-01-15
 tags:
-  - postgres
+  - db
 keywords:
   - Installing postgresql with brew
   - Installing psql with brew

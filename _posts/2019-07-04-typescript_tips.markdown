@@ -3,7 +3,6 @@ layout: post
 title: 'Miscellaneous for Typescript, VSCode'
 date: 2019-07-04
 tags:
-  - typescript
   - javascript
 keywords:
   - typescript tools

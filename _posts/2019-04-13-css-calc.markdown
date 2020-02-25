@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "You know that there is calc() in CSS, right?"
+title: 'You know that there is calc() in CSS, right?'
 date: 2019-04-13
 tags:
-- css
+  - frontend
 keywords:
-- css
-- css calc
-- css footer at the bottom
+  - css
+  - css calc
+  - css footer at the bottom
 ---
 
 `calc()` function allows you to perform calculations when specifying CSS property value.
@@ -26,20 +26,20 @@ Nice thing it's supported by all major browsers
 Now footer might be implemented in easy way, instead of looking for hacks with negative margins
 {% highlight css %}
 body {
-  background: red;
-  padding: 0;
-  margin: 0;
-  height: 100vh;
+background: red;
+padding: 0;
+margin: 0;
+height: 100vh;
 }
 
 .container {
-  background-color: cornflowerblue;
-  min-height: calc(100% - 80px);
+background-color: cornflowerblue;
+min-height: calc(100% - 80px);
 }
 
 .footer {
-  background-color: yellow;
-  height: 80px;
+background-color: yellow;
+height: 80px;
 }
 {% endhighlight %}
 

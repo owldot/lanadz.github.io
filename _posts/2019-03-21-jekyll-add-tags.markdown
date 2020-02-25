@@ -1,34 +1,41 @@
 ---
 layout: post
-title:  "How to add tags/categories to jekyll blog"
-date:   2019-03-21
+title: 'How to add tags/categories to jekyll blog'
+date: 2019-03-21
 tags:
-  - jekyll
+  - terminal
 keywords:
   - jekyll add tags or categories
   - jekyll tags
   - jekyll categories
 ---
+
 Hi,
 
 Today I want to share with you how to add tags/categories to your awesome blog
 
 Basically, I was following this [guide](https://blog.webjeda.com/jekyll-categories/)
+
 <!--more-->
+
 Shortly,
 
 - you need to create permalink in your `_config.yml`
 
-    `permalink: /tags/:title/`
+  `permalink: /tags/:title/`
 
 - create a page `tags.html`
-{% highlight html %}
-{% raw %}
+  {% highlight html %}
+  {% raw %}
+
 ---
+
 layout: page
 permalink: /tags/
 title: Tags
+
 ---
+
 <div>
     {% for tag in site.tags %}
     <div>
@@ -47,15 +54,12 @@ title: Tags
         </ul>
     </div>
     {% endfor %}
+
 </div>
 {% endraw %}
 {% endhighlight %}
 
-
 - add `tags` key with array of values to your front matter to each of your post
-{% highlight yaml %}
-tags:
-    - tag1
-    - tag2
-{% endhighlight %}
-
+  {% highlight yaml %}
+  tags: - tag1 - tag2
+  {% endhighlight %}

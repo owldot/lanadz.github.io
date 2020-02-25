@@ -4,7 +4,6 @@ title: 'ESLint: Destructure deeply nested objects and return default value for u
 date: 2019-06-22
 tags:
   - javascript
-  - configuration
 keywords:
   - eslint destructuring
   - eslint destructuring deeply nested objects

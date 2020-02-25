@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  "SASS and Rails Asset Pipeline. Remove duplicates of imports."
-date:   2019-02-20
+title: 'SASS and Rails Asset Pipeline. Remove duplicates of imports.'
+date: 2019-02-20
 tags:
-  - development
   - rails
-  - css
+  - frontend
 keywords:
   - SASS and Rails Asset Pipeline Remove duplicates of imports
   - rails sass
   - Remove duplicates of imports sass
   - Asset Pipeline
 ---
+
 Hi there,
 
 Another day another problem :)
@@ -19,14 +19,16 @@ Another day another problem :)
 Let me show what I noticed with my css on the project.
 
 Here is the structure of the project, which is common for most rails project, I think
+
 <!--more-->
+
 In my `application.sass` I had
 
 {% highlight html %}
-/* *= require_tree .
-*= require_self
-*= require 'bulma.min'
-*/
+/\* _= require_tree .
+_= require_self
+_= require 'bulma.min'
+_/
 
 @import "select2"
 @import "values.sass"
@@ -40,7 +42,7 @@ Later I added `file1.sass` where I wanted to use those rules defined in `values.
 
 {% highlight bash %}
 Showing /app/views/layouts/application.html.haml where line #9 raised:
-Undefined variable: "$gray_dark".
+Undefined variable: "\$gray_dark".
 {% endhighlight %}
 
 hmmmm
@@ -56,10 +58,15 @@ And the process continues...
 If you open you compiled file you will see something like:
 
 {% highlight bash %}
+
 # rules from values.css …<------ duplicated
+
 # rules from file.css …
+
 # rules from values.css …<------ duplicated
+
 # rules from another_file.css …
+
 {% endhighlight %}
 
 Do we need this? nooo, it's hard to call a solution, when you have those copied rules multiple times. In the end, our poor users have to download all those long and big files.
@@ -70,10 +77,10 @@ From [sass-rails](https://github.com/rails/sass-rails#important-note)
 
 > Sprockets provides some directives that are placed inside of comments called require, require_tree, and require_self. DO NOT USE THEM IN YOUR SASS/SCSS FILES. They are very primitive and do not work well with Sass files. Instead, use Sass's native @import directive which sass-rails has customized to integrate with the conventions of your Rails projects.
 
-Which basically means we need to @import our files instead of *=require. So easy and right fix will be to rewrite application.sass to:
+Which basically means we need to @import our files instead of \*=require. So easy and right fix will be to rewrite application.sass to:
 
 {% highlight html %}
-// remove *=require directives
+// remove \*=require directives
 // and add
 
 @import "values

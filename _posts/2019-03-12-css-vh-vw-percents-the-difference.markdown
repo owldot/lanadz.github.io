@@ -1,26 +1,29 @@
 ---
 layout: post
-title:  "CSS vh and vw, and %. So What's The Difference?"
-date:   2019-03-12
+title: "CSS vh and vw, and %. So What's The Difference?"
+date: 2019-03-12
 tags:
- - css
+  - frontend
 keywords:
   - CSS vh and vw and percent difference
   - css units
 ---
+
 Hi there,
 
 This article will be short one :)
 
 Yesterday when I was fixing layout I asked what's the difference between units vh/vw and %
 Let's see an example
+
 <!--more-->
+
 {% highlight html %}
-    <style>
-      .vw-style {
-        width: 50vw;
-        background-color: green;
-      }
+<style>
+.vw-style {
+width: 50vw;
+background-color: green;
+}
 
       .percent-style {
         width: 50%;
@@ -32,6 +35,7 @@ Let's see an example
 
     <div class="percent-style">50%</div>
     <div class="vw-style">50vw</div>
+
 {% endhighlight %}
 
 Looks like both is going to take 50 percent of width of the viewport. And that's right. in this case it will give you exactly the same result.
@@ -41,11 +45,11 @@ Looks like both is going to take 50 percent of width of the viewport. And that's
 Now let's see slightly different case. We will put our divs into parent div which has width set to 50%:
 
 {% highlight html %}
-    <style>
-      .vw-style {
-        width: 50vw;
-        background-color: green;
-      }
+<style>
+.vw-style {
+width: 50vw;
+background-color: green;
+}
 
       .percent-style {
         width: 50%;
@@ -66,6 +70,7 @@ Now let's see slightly different case. We will put our divs into parent div whic
     <div class="parent">
         <div class="vw-style">50vw</div>
     </div>
+
 {% endhighlight %}
 
 In this case child div with width 50% will take 50% of parent's width and child div with width 50vw will still keep 50% of viewport (the browser window size) and not parent div.
@@ -75,12 +80,11 @@ Like this:
 
 That's all the difference. VW and VH - those are viewport-percentage units.
 
-| Unit | Meaning |
-|------|---------|
-| **vw** | 1/100th viewport width |
-| **vh** | 1/100th viewport height |
+| Unit     | Meaning                      |
+| -------- | ---------------------------- |
+| **vw**   | 1/100th viewport width       |
+| **vh**   | 1/100th viewport height      |
 | **vmin** | 1/100th of the smallest side |
-| **vmax** | 1/100th of the largest side |
-
+| **vmax** | 1/100th of the largest side  |
 
 Hopefully it will help!

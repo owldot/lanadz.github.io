@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Change Port For npm start"
-date:   2019-04-04
+title: 'Change Port For npm start'
+date: 2019-04-04
 tags:
   - npm
   - react
@@ -16,10 +16,10 @@ like this
 {% highlight javascript%}
 ...
 "scripts": {
-    "start": "PORT=8000 react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+"start": "PORT=8000 react-scripts start",
+"build": "react-scripts build",
+"test": "react-scripts test",
+"eject": "react-scripts eject"
+},
 ...
 {% endhighlight %}

@@ -3,7 +3,7 @@ layout: post
 title: 'Add git name and email per project'
 date: 2019-07-05
 tags:
-  - configuration
+  - terminal
 keywords:
   - add git name and email per project
 ---

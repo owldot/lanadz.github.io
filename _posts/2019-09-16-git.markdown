@@ -3,8 +3,7 @@ layout: post
 title: 'git in terminal'
 date: 2019-09-16
 tags:
-  - bash
-  - console
+  - terminal
 keywords:
   - git --no-ff
   - git --ff-only
@@ -13,8 +12,9 @@ keywords:
 ---
 
 Useful flags for `git`:
+
 - `git log --graph` shows logs in graph presentation
-- `git pull --ff-only` Refuse to merge and exit with a non-zero status unless the current HEAD is already up to date or the merge can be resolved as a __fast-forward__.
+- `git pull --ff-only` Refuse to merge and exit with a non-zero status unless the current HEAD is already up to date or the merge can be resolved as a **fast-forward**.
 - `git pull --rebase` rebase the current branch on top of the upstream branch after fetching
 - `git show --output=<file>` prints diff to file. Pretty useful sometimes
 - `git show <sha> --name-only` prints not all changes but file names only

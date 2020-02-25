@@ -1,22 +1,25 @@
 ---
 layout: post
-title: "Deploy other branch to heroku"
+title: 'Deploy other branch to heroku'
 date: 2019-04-26
 tags:
-- configuration
+  - terminal
 keywords:
-- heroku
-- Deploy other branch to heroku
-- SPA and rails on one server
+  - heroku
+  - Deploy other branch to heroku
+  - SPA and rails on one server
 ---
 
 I am building an API server and SPA separately.
 Since free dynos on Heroku are slow, to improve performance I put everything on one server.
+
 <!--more-->
+
 So, I
- - `yarn build` SPA project
- - put that built files to the `public` directory of my rails app
- - my rails app is deployed to Heroku
+
+- `yarn build` SPA project
+- put that built files to the `public` directory of my rails app
+- my rails app is deployed to Heroku
 
 Works like a charm on a couple of projects.
 

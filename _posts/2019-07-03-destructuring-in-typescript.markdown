@@ -3,7 +3,7 @@ layout: post
 title: 'Destructuring in Typescript'
 date: 2019-07-03
 tags:
-  - typescript
+  - javascript
 keywords:
   - typescript destructuring
 ---

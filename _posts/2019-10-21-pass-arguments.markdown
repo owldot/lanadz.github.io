@@ -3,8 +3,7 @@ layout: post
 title: 'Pass flags/arguments to command for internal command, for example to scripts in npm or yarn'
 date: 2019-10-21
 tags:
-  - bash
-  - console
+  - terminal
 keywords:
   - npm test add watch
   - Run command params inside other command
@@ -20,15 +19,15 @@ So, let's say you need to add new flag `--watch` to your script from `package.js
 ```
 
 Yes, you can add `"test": "jest --watch"` to your `package.json`, but that might be not very convinient, insted you can add this directly in terminal.
-But mind, that 
+But mind, that
 
 ```bash
 $ npm test --watch
 ```
+
 won't work as expected because `--watch` will be considered as a part of npm command, not jest comman as we would like
 
-So, what you should do instead is 
-
+So, what you should do instead is
 
 ```bash
 $ npm test -- --watch

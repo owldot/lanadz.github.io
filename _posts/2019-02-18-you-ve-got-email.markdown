@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "You've Got Email"
-date:   2019-02-08
+title: "You've Got Email"
+date: 2019-02-08
 tags:
-  - configuration
-  - development
+  - terminal
   - rails
 keywords:
   - Youve Got Email
@@ -19,7 +18,9 @@ Hey guys,
 Today I've spent some time setting up emails for my [educards.owldot.com](educards.owldot.com)
 
 That was a pretty great experience as I never did it before. I mean all configuration for production from scratch.
+
 <!--more-->
+
 The task was to send welcome email to new users. And also notify me by email that I've got a new user registered to EduCards. Common task, right? So, what I used:
 
 - Rails Action Mailer is a common library
@@ -33,8 +34,7 @@ But then we need to deploy, right? And a production environment is a completely 
 
 First thought was just use Gmail's SMTP configuration and that's it. Something like [rails guide](https://guides.rubyonrails.org/action_mailer_basics.html#action-mailer-configuration-for-gmail) suggests:
 
-{% highlight ruby %}
-    # Add following to config/environments/$RAILS_ENV.rb
+{% highlight ruby %} # Add following to config/environments/\$RAILS_ENV.rb
 
     config.action_mailer.delivery_method = :smtp
     config.action_mailer.smtp_settings = {
@@ -45,6 +45,7 @@ First thought was just use Gmail's SMTP configuration and that's it. Something l
       password:             '<password>',
       authentication:       'plain',
       enable_starttls_auto: true }
+
 {% endhighlight %}
 
 But then you will face all those issues if you go with Google SMTP conf (you will need to turn off 2-FA, generate app-password, etc.), limit of sent/received emails, custom domains, lack of tracking tools (you will need to build your own solutions).
@@ -62,14 +63,17 @@ Mind it may take up to 48 hours to update. In my case, I was lucky it started to
 Great help was [official gem from mailgun](https://github.com/mailgun/mailgun-ruby) Few lines in initializer and production.rb: And no more changes to my Rails app.
 
 {% highlight ruby %}
+
 # config/initializers/mailgun.rb
 
     Mailgun.configure do |config|
       config.api_key = 'your-secret-api-key'
     end
+
 {% endhighlight %}
 
 {% highlight ruby %}
+
 # config/environments/production.rb
 
     config.action_mailer.delivery_method = :mailgun
@@ -77,6 +81,7 @@ Great help was [official gem from mailgun](https://github.com/mailgun/mailgun-ru
         api_key: 'api-myapikey',
         domain: 'mydomain.com',
     }
+
 {% endhighlight %}
 
 Now, I can send/receive emails from my `@owldot.com` to happy new users.

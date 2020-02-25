@@ -1,12 +1,11 @@
 ---
 layout: post
-title:  "gem install mysql2"
-date:   2019-02-08
+title: 'gem install mysql2'
+date: 2019-02-08
 tags:
-    - configuration
-    - development
-    - mysql
-    - rails
+  - terminal
+  - db
+  - rails
 keywords:
   - gem install mysql2
   - configuration
@@ -14,9 +13,12 @@ keywords:
   - mysql
   - rails
 ---
+
 Oh, I was so pissed.
 I had some free time this morning to help out my friend with some UI and it happen to me that I didn't have mysql installed.
+
 <!--more-->
+
 So, there I was sitting in Starbucks on my mobile data (don't like to use open wifi you know) and trying to setup env for that projects. The culprit was mysql and mysql2 gem :(
 
 but anyways, following help me:
