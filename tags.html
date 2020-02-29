@@ -4,25 +4,27 @@ permalink: /tags/
 title: Tags
 ---
 
-
 <div>
-    {% assign sorted_tags = site.tags | sort %}
-    {% for tag in sorted_tags %}
-    <div>
-        {% capture tag_name %}{{ tag | first }}{% endcapture %}
-        <div id="#{{ tag_name | slugize }}"></div>
-        <p></p>
+  {% assign sorted_tags = site.tags | sort %} {% for tag in sorted_tags %}
+  <div>
+    {% capture tag_name %}{{ tag | first }}{% endcapture %}
+    <div id="#{{ tag_name | slugize }}"></div>
+    <p></p>
 
-        <a name="{{ tag_name | slugize }}" href="#{{ tag_name | slugize }}">#</a>
-        <span>{{ tag_name }}</span>
-        <ul>
-        {% for post in site.tags[tag_name] %}
-        <li><article>
-            <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
-            <span class="small">{{post.date | date: "%Y-%m-%d" }}</span>
+    <a name="{{ tag_name | slugize }}" href="#{{ tag_name | slugize }}">#</a>
+    <span>{{ tag_name }}</span>
+    <ul>
+      {% for post in site.tags[tag_name] %}
+      <li>
+        <article>
+          <a class="white" href="{{ site.baseurl }}{{ post.url }}"
+            >{{post.title}}</a
+          >
+          <span class="small">{{post.date | date: "%Y-%m-%d" }}</span>
         </article>
         {% endfor %}
-        </ul>
-    </div>
-    {% endfor %}
+      </li>
+    </ul>
+  </div>
+  {% endfor %}
 </div>
