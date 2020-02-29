@@ -14,6 +14,8 @@ I have a class and I have a test. And everything is great until I add next test.
 
 So, I had something like this:
 
+<!--more-->
+
 ```ruby
 class Formatter
   class << self
