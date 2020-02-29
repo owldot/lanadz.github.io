@@ -4,6 +4,7 @@ title: 'Create link that opens in new tab from markdown (like this: target="_bla
 date: 2019-07-24
 tags:
   - terminal
+dont_show_excerpt_separator: true
 keywords:
   - open link in new tab in markdown
   - target="_blank" in markdown

@@ -4,6 +4,7 @@ title: 'git in terminal'
 date: 2019-09-16
 tags:
   - terminal
+dont_show_excerpt_separator: true
 keywords:
   - git --no-ff
   - git --ff-only

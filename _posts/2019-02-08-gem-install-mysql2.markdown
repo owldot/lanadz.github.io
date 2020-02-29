@@ -14,8 +14,9 @@ keywords:
   - rails
 ---
 
-Oh, I was so pissed.
-I had some free time this morning to help out my friend with some UI and it happen to me that I didn't have mysql installed.
+Oh, I was so angry.
+
+I had some free time this morning to help out my friend with some UI and it happen to me that I didn't have mysql installed. So I couldn't run his app locally
 
 <!--more-->
 
@@ -27,4 +28,5 @@ gem install mysql2 -v '0.5.2' -- --with-mysql-lib=/usr/local/opt/mysql@5.7/lib -
 
 gem install mysql2 -v '0.5.2' -- --with-ldflags=-L/usr/local/opt/openssl/lib --with-cppflags=-I/usr/local/opt/openssl/include
 {% endhighlight %}
+
 So if you are stuck that might help you, just remember to add all paths to your mysql together with `bundle install` command

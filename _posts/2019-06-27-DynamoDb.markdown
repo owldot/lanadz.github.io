@@ -5,6 +5,7 @@ date: 2019-06-27
 tags:
   - terminal
   - db
+dont_show_excerpt_separator: true
 keywords:
   - dynamodb locally
 ---

@@ -24,9 +24,13 @@ title: Personal Sharing Space
             <span class="post-meta">{{ post.date | date: date_format }}</span>
             <div class='preview'>{{ post.excerpt }}<div>
             <br />
+            {% if post.dont_show_excerpt_separator %}
+            {% else %}
             <a href="{{ post.url | relative_url }}">
                     More...
-            </a>
+            {% endif %}
+
+          </a>
             <div style='clear: both;'></div>
             <div class="tags">
                     {%- for tag in post.tags %}
@@ -41,24 +45,17 @@ title: Personal Sharing Space
 
     <!-- Pagination links -->
     <div class="pagination">
-        {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path }}" class="previous">
-            Previous
-          </a>
+      {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+          <em>{{ page }}</em>
+        {% elsif page == 1 %}
+          <a href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a>
         {% else %}
-          <span class="previous">Previous</span>
+          <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
         {% endif %}
-        <span class="page_number ">
-          Page: {{ paginator.page }} of {{ paginator.total_pages }}
-        </span>
-        {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-        {% else %}
-          <span class="next ">Next</span>
-        {% endif %}
-      </div>
+      {% endfor %}
+    </div>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
     {%- endif -%}
 
 </div>

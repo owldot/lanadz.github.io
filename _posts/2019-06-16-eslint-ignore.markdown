@@ -4,6 +4,7 @@ title: 'ESLint: Ignore file. Ignore console.log()'
 date: 2019-06-16
 tags:
   - javascript
+dont_show_excerpt_separator: true
 keywords:
   - eslint ignore file
   - disable eslint for file

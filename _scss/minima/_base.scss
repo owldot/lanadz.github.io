@@ -272,3 +272,23 @@ table {
   font-size: 0.7em;
   color: $grey-color;
 }
+
+.pagination {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  em,
+  a {
+    margin: 5px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    color: $grey-color;
+  }
+  em {
+    font-style: normal;
+    font-weight: bold;
+    color: $grey-color-dark;
+  }
+}

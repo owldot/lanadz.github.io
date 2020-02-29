@@ -4,6 +4,7 @@ title: 'Nettop - see your traffic'
 date: 2019-08-29
 tags:
   - terminal
+dont_show_excerpt_separator: true
 keywords:
   - see amount of network traffic
   - nettop concise

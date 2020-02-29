@@ -4,6 +4,7 @@ title: 'Pass flags/arguments to command for internal command, for example to scr
 date: 2019-10-21
 tags:
   - terminal
+dont_show_excerpt_separator: true
 keywords:
   - npm test add watch
   - Run command params inside other command

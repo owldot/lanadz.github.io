@@ -4,6 +4,7 @@ title: 'ES6 course recommendation'
 date: 2019-03-23
 tags:
   - javascript
+dont_show_excerpt_separator: true
 keywords:
   - es6 course recomendation
 ---

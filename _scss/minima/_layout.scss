@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-  border-bottom: 1px solid $grey-color-light;
+  border-bottom: 1px solid $grey-color-dark;
   min-height: $spacing-unit * 1.865;
   background: $grey-color-dark;
 
@@ -18,12 +18,12 @@
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
-  color: white;
+  color: #a4fc00;
 
   &,
   a,
   &:visited {
-    color: white;
+    color: #a4fc00;
   }
 }
 
@@ -186,7 +186,7 @@
  */
 .page-content {
   padding: $spacing-unit 0;
-  background-color: $grey-color-light;
+  background-color: $grey-color;
   flex: 1;
 }
 
@@ -271,7 +271,7 @@
   .tag {
     display: inline-block;
     font-size: small;
-    background-color: lighten($brand-color, 30%);
+    background-color: #89d102;
     color: white;
     text-decoration: none;
     padding: 0 10px;
