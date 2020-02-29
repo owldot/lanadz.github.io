@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'References! References everywhere! Or why my string is modified?'
+title: 'References! References everywhere! Or Why Is My String Modified?'
 date: 2020-02-28
 tags:
   - ruby
@@ -80,7 +80,7 @@ In case if you are reassigning (creating new string) you will receive new `objec
 
 So as you can see from the example above, after reassignment of `another_string` it received new `object_id` 260 and old `string` stayed 240
 
-Similar happens with arrays and hashes.
+Same applies to any object in Ruby, i.e. arrays, hashes.
 
 And yeah, I should've used `TITLE = 'Text'.freeze` for my constant 😅
 
