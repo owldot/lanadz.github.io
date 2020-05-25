@@ -12,7 +12,7 @@ dont_show_excerpt_separator: true
 
 I've tried to use Minitest for small ruby projects/exercises. Before that I was always using `rspec`. But now I have some time and I wanted to try something new. Old "new", heheh 😅. Minitest is straight forward, fast, what's not to like. And it comes with Ruby by default since 1.9.
 
-Anyway, to my big surprise I couldn't run all the tests from the directory and playing one by one is time consuming and tedious. If there is a default way how to run them all, please share, meanwhile here comes little Rakefile
+Anyway, to my big surprise I couldn't run all the tests from the directory and playing one by one is time consuming and tedious. If there is a default way how to run them all, please share, meanwhile here comes little Rakefile:
 
 ```ruby
 require 'rake/testtask'
@@ -26,4 +26,4 @@ Rake::TestTask.new(:test) do |t|
 end
 ```
 
-Now just run `rake test` from the directory where all your files are located.
+Now just run `rake test` and enjoy TDD.
