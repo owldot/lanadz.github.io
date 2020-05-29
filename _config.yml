@@ -17,7 +17,7 @@ title: DevNotes
 email: svitlana.dzyuban@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Svitlana Dzyuban (LanaDz) - Software Engineer.
-  Dev Journal's goal is to keep and share thoughts, ideas, helpful info and just have fun.
+  Dev Notes's goal is to keep and share thoughts, ideas, helpful info and just have fun.
   I really hope you find something interesting here.
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://lanadz.com' # the base hostname & protocol for your site, e.g. http://example.com
