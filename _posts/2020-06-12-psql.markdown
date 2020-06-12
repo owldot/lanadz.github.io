@@ -1,0 +1,36 @@
+---
+layout: post
+title: 'PSQL cheatsheet - quick commands that I use in console'
+date: 2020-06-06
+tags:
+  - db
+keywords:
+  - psql commands
+dont_show_excerpt_separator: true
+---
+
+Here is compiled a list of commands to run in postgres console:
+
+## Run console
+
+`$ docker-compose exec db psql -Upostgres` to run pg console. In my case, I am running it from docker and the user is postgres, no password.
+
+## List databases
+
+`$ \l` Will list available databases
+
+## Switch database
+
+`$ \c DATABASE_NAME` allows you to switch between databases.
+
+## Listing
+
+`$ \d` when connected to the database, list tables, views, and sequences.
+
+`$ \dt` list tables only.
+
+`$ \d+ TABLE_NAME` show description of the table:
+
+### Show columns name:
+
+`$ \t` If queries show data but you don't see table's, this command will help to toggle that.
