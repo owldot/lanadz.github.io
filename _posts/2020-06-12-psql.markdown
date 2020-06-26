@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'PSQL cheatsheet - quick commands that I use in console'
-date: 2020-06-06
+date: 2020-06-12
 tags:
   - db
 keywords:

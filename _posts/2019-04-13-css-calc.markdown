@@ -43,6 +43,15 @@ height: 80px;
 }
 {% endhighlight %}
 
+And HTML part is simple as this: 
+
+{% highlight html %}
+<body>
+<div class="container"></div>
+<div class="footer"></div>
+</body>
+{% endhighlight %}
+
 ![screenshot](/assets/css_calc.png)
 
 You may notice `vh` unit at rules for `body`. That's awasome units!
