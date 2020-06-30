@@ -1,0 +1,18 @@
+---
+layout: post
+title: 'Tip how to keep focused'
+date: 2020-06-30
+tags:
+  - personal space
+keywords:
+  - Tip how to keep focused
+dont_show_excerpt_separator: true
+---
+
+It happens to me, that I can work and then I have an urge to google something or I reminded to do something.
+And push it away doesn't work. I cannot keep focused because I absolutely need to check if <span style='text-decoration: line-through'>something is available on amazon, to track and order, check if plants are watered,</span> you name it.
+And all those things can wait, but still, 😅 I want to do it know
+
+What surprisingly worked well: "distracting list"!
+
+I just created a note where I put all those minor things for later. Guess the trick is that it is written and saved and I don't need to "keep that in memory"
