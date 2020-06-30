@@ -15,17 +15,17 @@ keywords:
 
 Hey guys,
 
-Today I've spent some time setting up emails for my [educards.owldot.com](educards.owldot.com)
+Today I've spent some time setting up emails for my [www.owldot.com](www.owldot.com)
 
 That was a pretty great experience as I never did it before. I mean all configuration for production from scratch.
 
 <!--more-->
 
-The task was to send welcome email to the new users. And also notify me by email that I've got a new user registered to EduCards. Common task, right? So, what I used:
+The task was to send welcome email to the new users. And also notify me by email that I've got a new user registered to OwlDot. Common task, right? So, what I used:
 
 - Rails Action Mailer is a common library
 - Mailgun - popular email service for sending, receiving and tracking email
-- EduCards are hosted on Heroku
+- OwlDot are hosted on Heroku
 
 Everything started super easy:
 
@@ -52,7 +52,7 @@ But then you will face all those issues if you go with Google SMTP conf (you wil
 
 It didn't look like a reasonable solution for production. So, I started to look for some ready services.
 
-EduCards is hosted on Heroku and Heroku gives you couple services as add-ons to your application. I picked [Mailgun](https://www.mailgun.com) as they had everything i needed and for free 😍. Such as custom domain, 10K free mails, tracking and dashboard.
+OwlDot is hosted on Heroku and Heroku gives you couple services as add-ons to your application. I picked [Mailgun](https://www.mailgun.com) as they had everything i needed and for free 😍. Such as custom domain, 10K free mails, tracking and dashboard.
 
 Setup with registar was pretty easy. You need to go to your registar (godaddy, name, etc) and update some dns settings. Those settings will be provided for you by mailgun's setup wizard and will look something like this:
 
