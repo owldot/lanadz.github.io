@@ -1,0 +1,47 @@
+---
+layout: post
+title: 'Create new project with minitest and nice output'
+date: 2020-07-15
+tags:
+  - ruby
+keywords:
+  - minitest
+  - minitest reporters
+dont_show_excerpt_separator: false
+---
+
+Quick list how to create simple Ruby project with minitest:
+
+<!--more-->
+
+- obiously you need to create new directory
+- run `bundle init` to generate new Gemfile
+- add minitest related gems:
+
+```ruby
+group :test do
+  gem 'minitest'
+  gem 'minitest-reporters'
+end
+```
+
+- `bundle install`
+- create test file and add
+
+```ruby
+require 'minitest/autorun'
+require 'minitest/reporters'
+Minitest::Reporters.use! [Minitest::Reporters::SpecReporter.new]
+```
+
+Reporters add nice formatting to your output. Personaly, I prefer spec-like output, so I used `Minitest::Reporters::SpecReporter`.
+
+The `DefaultReporter` gives you the following output:
+
+<p>
+<img src="{{site.baseurl}}/assets/defaultReporter.png" />
+</p>
+
+The `SpecReporter` gives you the following output:
+
+<img src="{{site.baseurl}}/assets/specReporter.png" />
