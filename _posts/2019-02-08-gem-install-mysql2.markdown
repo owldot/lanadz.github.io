@@ -5,7 +5,6 @@ date: 2019-02-08
 tags:
   - terminal
   - db
-  - backend
 keywords:
   - gem install mysql2
   - configuration

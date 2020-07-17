@@ -125,7 +125,7 @@ a {
   }
 
   &:hover {
-    color: $text-color;
+    color: lighten($brand-color, 15%);
     text-decoration: underline;
   }
 
@@ -162,9 +162,9 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
+  border: 1px solid #443;
   border-radius: 3px;
-  background-color: #eef;
+  background-color: #333;
 }
 
 code {
@@ -281,17 +281,24 @@ table {
   margin: auto;
   display: flex;
   em,
-  a {
-    margin: 5px;
+  a,
+  i {
+    margin: 0 15px 0 0;
     display: block;
-    width: 25px;
-    height: 25px;
-    background-color: white;
-    color: $grey-color;
+    // width: 25px;
+    // height: 25px;
+    background-color: transparent;
+    color: $brand-color;
   }
   em {
     font-style: normal;
     font-weight: bold;
-    color: $grey-color-dark;
+    color: red;
+  }
+  i {
+    color: #444;
+    &:last-child {
+      display: none;
+    }
   }
 }

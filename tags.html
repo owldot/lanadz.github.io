@@ -12,7 +12,7 @@ title: Contents
     <p></p>
 
     <a name="{{ tag_name | slugize }}" href="#{{ tag_name | slugize }}">#</a>
-    <span>{{ tag_name }}</span>
+    <span style="color: yellow;">{{ tag_name }}</span>
     <ul>
       {% for post in site.tags[tag_name] %}
       <li>
@@ -20,7 +20,9 @@ title: Contents
           <a class="white" href="{{ site.baseurl }}{{ post.url }}"
             >{{post.title}}</a
           >
-          <span class="small">{{post.date | date: "%Y-%m-%d" }}</span>
+          <span style="color: red;" class="small"
+            >{{post.date | date: "%Y-%m-%d" }}</span
+          >
         </article>
         {% endfor %}
       </li>
