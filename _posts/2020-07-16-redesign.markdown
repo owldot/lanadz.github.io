@@ -1,0 +1,15 @@
+---
+layout: post
+title: 'Redesign'
+date: 2020-07-16
+tags:
+  - personal space
+keywords:
+  - jekyll
+  - procrastinating
+dont_show_excerpt_separator: true
+---
+
+When you are procrastinating, go and redesign your blog. Or watch some talks from conferences and learn something. Or pair-program with somebody. There will be the satisfaction of something achieved at the end of the day.
+
+Today T.I.L. became dark. 🎨
