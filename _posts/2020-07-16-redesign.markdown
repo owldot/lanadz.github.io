@@ -10,6 +10,6 @@ keywords:
 dont_show_excerpt_separator: true
 ---
 
-When you are procrastinating, go and redesign your blog. Or watch some talks from conferences and learn something. Or pair-program with somebody. There will be the satisfaction of something achieved at the end of the day.
+When you are procrastinating, go and redesign your blog. Or watch some conference tasks and learn something. Or pair-program with somebody. There will be the satisfaction of something achieved at the end of the day.
 
 Today T.I.L. became dark. 🎨
