@@ -50,6 +50,8 @@ The `SpecReporter` gives you the following output:
 
 <img src="{{site.baseurl}}/assets/specReporter.png" />
 
+# Run single test
+
 Nice bonus: `focus`. You just need to add `focus` before method or `it`. [Source](https://github.com/seattlerb/minitest-focus)
 
 ```ruby
