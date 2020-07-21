@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Ministest - Run all tests from the directory'
+title: 'Minitest - Run all tests from the directory'
 date: 2020-05-20
 tags:
   - ruby
