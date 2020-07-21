@@ -1,12 +1,14 @@
 ---
 layout: post
-title: 'Create new project with minitest and nice output'
+title: 'Create new project with minitest and nice output. Run single test'
 date: 2020-07-15
 tags:
   - ruby
 keywords:
   - minitest
   - minitest reporters
+  - Run single test
+  - minitest focus
 dont_show_excerpt_separator: false
 ---
 
@@ -48,7 +50,7 @@ The `SpecReporter` gives you the following output:
 
 <img src="{{site.baseurl}}/assets/specReporter.png" />
 
-Another nice bonus: `focus`. You just need to add `focus` before method or `it`.
+Nice bonus: `focus`. You just need to add `focus` before method or `it`. [Source](https://github.com/seattlerb/minitest-focus)
 
 ```ruby
 require "minitest/autorun"
