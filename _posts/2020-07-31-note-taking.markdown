@@ -29,5 +29,5 @@ Then, when you're job hunting review your notes and bullets and collect the ones
 ...
 </blockquote>
 
-But also it's helpful as a reminder for what we are doing and what we have **achieved**
-Sprint notes are gone when you are changing company and will be too detailed to re-read, but a good old notebook (digital or real) is good to have. I will try to build a new habit
+But also it's helpful as a reminder for what we are doing and what we have **achieved**.
+Sprint notes are gone when you are changing company and will be too detailed to re-read, but a good old notebook (digital or real) is good to have. I will try to build a new habit.
