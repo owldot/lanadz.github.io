@@ -1,0 +1,23 @@
+---
+layout: post
+title: 'Deep in ice'
+date: 2020-07-30
+tags:
+  - personal space
+keywords:
+  - github archives
+  - The GitHub Arctic Code Vault
+dont_show_excerpt_separator: true
+---
+
+Do you know about <a href="https://archiveprogram.github.com/">The GitHub Arctic Code Vault</a>?
+
+<blockquote>
+The GitHub Arctic Code Vault is a data repository preserved in the Arctic World Archive (AWA), a very-long-term archival facility 250 meters deep in the permafrost of an Arctic mountain. The archive is located in a decommissioned coal mine in the Svalbard archipelago, closer to the North Pole than the Arctic Circle. GitHub will capture a snapshot of every active public repository on 02/02/2020 and preserve that data in the Arctic Code Vault.
+</blockquote>
+
+Because I didn't.
+
+I noticed a new badge on my github [profile](https://github.com/lanadz) and was surprised to learn that this blog was stored in Arctic Code Vault. Something I leave for future generations 😅. That made me happy!
+
+<img src="/assets/fallout.png" style="width: 200px; height: 200px; display:block; margin: auto;" alt="fallout"/>
