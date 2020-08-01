@@ -24,6 +24,7 @@ Quick list how to create simple Ruby project with minitest:
 group :test do
   gem 'minitest'
   gem 'minitest-reporters'
+  gem 'minitest-focus'
 end
 ```
 
