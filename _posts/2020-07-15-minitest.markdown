@@ -34,7 +34,7 @@ end
 ```ruby
 require 'minitest/autorun'
 require 'minitest/reporters'
-require "minitest/focus"
+require 'minitest/focus'
 
 Minitest::Reporters.use! [Minitest::Reporters::SpecReporter.new]
 ```
@@ -56,8 +56,8 @@ The `SpecReporter` gives you the following output:
 Nice bonus: `focus`. You just need to add `focus` before method or `it`. [Source](https://github.com/seattlerb/minitest-focus)
 
 ```ruby
-require "minitest/autorun"
-require "minitest/focus"
+require 'minitest/autorun'
+require 'minitest/focus'
 
 class MyTest < MiniTest::Unit::TestCase
   def test_unrelated; ...; end       # will NOT run
@@ -72,7 +72,7 @@ end
 
 # or, with spec-style:
 
-describe "MyTest2" do
+describe 'MyTest2' do
   focus; it "does something"       do pass end
   focus  it("does something else") {  pass   } # block precedence needs {}
 end
