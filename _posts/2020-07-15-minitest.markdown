@@ -73,7 +73,7 @@ end
 # or, with spec-style:
 
 describe 'MyTest2' do
-  focus; it "does something"       do pass end
-  focus  it("does something else") {  pass   } # block precedence needs {}
+  focus; it 'does something'       do pass end
+  focus  it('does something else') {  pass   } # block precedence needs {}
 end
 ```
