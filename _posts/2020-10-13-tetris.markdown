@@ -1,0 +1,54 @@
+---
+layout: post
+title: Tetris
+date: 2020-08-09
+tags:
+  - javascript
+  - personal space
+keywords:
+  - browser games
+  - javascript tetris
+  - tetris
+  - online tetris
+dont_show_excerpt_separator: false
+---
+
+Take a break, play a game! [Tetris](https://lanadz.com/tetris/)
+
+It was a fun project, never wrote games before. Ok not quite true, I wrote one game in Delphi in 2000 🤦‍♀️ That was loooooong time ago. Maybe I need to implement that game too.
+
+Game is written in JavaScript and Jest is used for tests.
+It was funny how I struggle at the beginning to setup the environment. Missing those times when you had plain `javascript` and `index.html`. Double click on `index.html` and see the result.
+<!--more-->
+This time I wanted to use Jest and write tests. And write modules. And it didn't work smoothly from the first try.
+
+  I used
+  ```javascript
+  module.exports.Tetris = Tetris;
+  ```
+  and
+  ```javascript
+  const { Tetris } = require('./Tetris');
+  ```
+
+The reason why I used `require` but not `exports` and `imports` - `jest` worked with `require` statements right out of the box. And I didn't want to spend much time figuring out how to setup `webpack` and `babel` or whatever is needed to setup the project. Fast and simple please. And TDD ✅.
+
+And of course, `require` statements don't work in browser. [browserify](http://browserify.org/) came for the rescue. Simple tool, really. In simple words it adds `require` and `module` functionality to bundled file.
+
+The next issue was: if you simply double click `index.html` with bundled js files - you will receive the following error:
+
+<div class="errorDiv">
+<div class="content">
+Access to script at 'file:///Users/username/projects/tetris/bundle.js' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: http, data, chrome, chrome-extension, chrome-untrusted, https.
+</div>
+</div>
+
+To fight that one you will need some server running. I used [ruby oneliner](/tags/ruby-server-oneliner/)
+```bash
+ruby -rwebrick -e'WEBrick::HTTPServer.new(:Port => 9090, :DocumentRoot => Dir.pwd).start'
+```
+After that, you have a nice `localhost:9090` up and running.
+
+That's pretty much it for environment setup. Source code is available on [github](https://github.com/lanadz/tetris).
+
+Fun with <del>Flags</del> 😄 [Tetris](https://lanadz.com/tetris/)
