@@ -15,7 +15,7 @@ dont_show_excerpt_separator: false
 
 Take a break, play a game! [Tetris](https://lanadz.com/tetris/)
 
-It was a fun project, never wrote games before. Ok not quite true, I wrote one game in Delphi in 2000 🤦‍♀️ That was loooooong time ago. Maybe I need to implement that game too.
+It was a fun project, never wrote games before. Ok not quite true, I wrote one game in Delphi in 2000 🤦‍♀️ That was loooooong time ago. Maybe I need to reimplement that game in javascript.
 
 Game is written in JavaScript and Jest is used for tests.
 It was funny how I struggle at the beginning to setup the environment. Missing those times when you had plain `javascript` and `index.html`. Double click on `index.html` and see the result.
@@ -33,7 +33,7 @@ This time I wanted to use Jest and write tests. And write modules. And it didn't
 
 The reason why I used `require` but not `exports` and `imports` - `jest` worked with `require` statements right out of the box. And I didn't want to spend much time figuring out how to setup `webpack` and `babel` or whatever is needed to setup the project. Fast and simple please. And TDD ✅.
 
-And of course, `require` statements don't work in browser. [browserify](http://browserify.org/) came for the rescue. Simple tool, really. In simple words it adds `require` and `module` functionality to bundled file.
+And of course, `require` statements don't work in browser. [browserify](http://browserify.org/) came to the rescue. In simple words it adds `require` and `module` functionality to bundled file.
 
 The next issue was: if you simply double click `index.html` with bundled js files - you will receive the following error:
 
