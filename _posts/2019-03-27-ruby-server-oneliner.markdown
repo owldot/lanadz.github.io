@@ -16,7 +16,7 @@ When you need to have a web server there is this command available for you.
 This will run webrick and serve current directory on port 9090 (you can change it)
 
 {% highlight bash%}
-ruby -rwebrick -e'\''WEBrick::HTTPServer.new(:Port => 9090, :DocumentRoot => Dir.pwd).start'\''
+ruby -rwebrick -e'WEBrick::HTTPServer.new(:Port => 9090, :DocumentRoot => Dir.pwd).start'
 {% endhighlight %}
 
 <!--more-->
@@ -24,5 +24,5 @@ ruby -rwebrick -e'\''WEBrick::HTTPServer.new(:Port => 9090, :DocumentRoot => Dir
 I like to have this as a alias on my computer. Add this to your `.bash*` file. Then command `fakeserver` will be available for you
 
 {% highlight bash%}
-alias fakeserver='ruby -rwebrick -e'\''WEBrick::HTTPServer.new(:Port => 9090, :DocumentRoot => Dir.pwd).start'\'''
+alias fakeserver="ruby -rwebrick -e'WEBrick::HTTPServer.new(:Port => 9090, :DocumentRoot => Dir.pwd).start'"
 {% endhighlight %}
