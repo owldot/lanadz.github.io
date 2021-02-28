@@ -5,5 +5,12 @@
     "activityBar.foreground": "#222222",
     "activityBar.inactiveForeground": "#666666",
     "tab.activeBackground": "#cccccc"
-  }
+    "tab.activeForeground": "#444444",
+    "tab.inactiveForeground": "#c29f6b",
+    "editorError.foreground": "#af0060a4",
+    "editorWhitespace.foreground": "#af00601c",
+    "editor.selectionBackground": "#e7e1e1",
+    "editor.selectionHighlightBackground": "#bfd8bc",
+    "editor.lineHighlightBackground": "#d1e9ce"
+  },
 }
